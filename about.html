@@ -1,0 +1,74 @@
+---
+layout: default
+section_id: about
+logos:
+ - logo: images/logos/lambdafactory.png
+   link: http://lambdafactory.io
+
+---
+
+<div class='full' style='background: #333'>
+  <div class='row'>
+    <div class='large-12 columns'>
+      <h2 style='color: #fff;'>About the F#.Today</h2>
+    </div>
+  </div>
+  <div class='two spacing'></div>
+</div>
+
+<div class='full'>
+  <div class='row'>
+    <div class='large-12 columns'>
+      <h3>General info</h3>
+       <div class='spacing'></div>
+        <p>F#.Today is arbitrary chosen list of high quality, strategic for F# ecosysten projects following common principles. It's also (again, arbitrary chosen) "Hall of Fame" for F# developers who are working to make F# ecosystem and Community better every day.</p>
+        <p>It's not affilated with F# Software Foundation, Microsoft, Microsoft Research or any other official entity connected with F#.</p>
+      </div>
+    </div>
+  </div>
+  <div class='two spacing'></div>
+</div>
+
+<div class='full'>
+  <div class='row'>
+    <div class='medium-6 columns'>
+      <h3>Projects list</h3>
+      <div class='spacing'></div>
+      <ul>
+        <li>Open Source</li>
+        <li>Developed by Community</li>
+        <li>Cross Platform</li>
+        <li>High Quality</li>
+        <li>Open to contributions</li>
+      </ul>
+      <div class='two spacing'></div>
+    </div>
+    <div class='medium-6 columns'>
+      <h3>People list</h3>
+      <div class='spacing'></div>
+      <ul>
+        <li>Creating OSS F# projects</li>
+        <li>Contributing to F# ecosystem</li>
+        <li>Building friendly community</li>
+        <li>Providing help and support</li>
+      </ul>
+      <div class='two spacing'></div>
+    </div>
+  </div>
+</div>
+<div class='two spacing'></div>
+
+<div class='full'>
+  <div class='row'>
+    <div class='large-12 columns'>
+      <h3>F#.Today is supported by</h3>
+      <div class='spacing'></div>
+      <div class='small-6 medium-3 large-3 columns'>
+        {% for logo in page.logos %}
+          <div><a href="{{logo.link}}"> <img alt="" src="{{logo.logo}}" /></a></div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  <div class='four spacing'></div>
+</div>

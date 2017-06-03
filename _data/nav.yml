@@ -1,0 +1,9 @@
+- name: Projects
+  path: index.html
+  section_id: projects
+- name: People
+  path: people.html
+  section_id: people
+- name: About
+  path: about.html
+  section_id: about

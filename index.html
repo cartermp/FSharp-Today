@@ -1,0 +1,112 @@
+---
+layout: default
+section_id: projects
+works:
+  - image: images/projects/paket.jpg
+    class: graphic-design
+    title: Paket
+    desc: "Dependency management"
+    link: paket
+
+  - image: images/projects/fake.jpg
+    class: web-design print
+    title: FAKE
+    desc: "Build automation system"
+    link: fake
+
+  - image: images/projects/ionide.jpg
+    class: development wide
+    title: Ionide
+    desc: "Cross-platform IDE"
+    link: ionide
+
+  - image: images/projects/forge.jpg
+    class: brand
+    title: Forge
+    desc: "Project and solution management"
+    like: forge
+
+  - image: images/projects/suave.jpg
+    class: graphic-design
+    title: Suave
+    desc: "Simple web development library and lightweight web server "
+    link: suave
+
+  - image: images/projects/fslab.jpg
+    class: web-design
+    title: FsLab
+    desc: "Data science & machine learning"
+    link: fslab
+
+  - image: images/projects/fable.jpg
+    class: web-design wide
+    title: Fable
+    desc: "F# -> JS Compiler"
+    link: fable
+
+  - image: images/projects/canopy.jpg
+    class: graphic-design
+    title: Canopy
+    desc: "Web UI testing framework"
+    link: canopy
+
+  - image: images/projects/mbrace.jpg
+    class: web-design wide
+    title: MBrace
+    desc: "Integrated data scripting for the Cloud"
+    link: mbrace
+
+  - image: images/projects/logary.jpg
+    class: graphic-design
+    title: Logary
+    desc: "Next generation logging framework"
+    link: logary
+
+  - image: images/projects/fstoml.jpg
+    class: print brand
+    title: FsToml
+    desc: "Ligtweight project system"
+    link: fstoml
+
+  - image: images/projects/freya.jpg
+    class: graphic-design
+    title: Freya
+    desc: "Modern, purely functional stack for web programming"
+    link: freya
+
+  - image: images/projects/fsreveal.jpg
+    class: graphic-design
+    title: FsReveal
+    desc: "Bring F# to the reveal.js web presentation framework"
+    link: fsreveal
+
+  - image: images/projects/fscheck.jpg
+    class: graphic-design
+    title: FsCheck
+    desc: "Random, property based testing"
+    link: fscheck
+
+  - image: images/projects/expecto.jpg
+    class: graphic-design
+    title: "Expecto"
+    desc: "Smooth, lightweight testing"
+    link: expecto
+---
+
+<div class='mod modMasonryGallery'>
+  <ul class='gallery'>
+    {% for work in page.works %}
+      <li class='{{work.class}}'>
+        <a href='projects/{{work.link}}.html'>
+          <img alt="" src="{{work.image}}" />
+          <div class='overlay'>
+            <div class='thumb-info'>
+              <h3>{{work.title}}</h3>
+              <p>{{work.desc}}</p>
+            </div>
+          </div>
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</div>

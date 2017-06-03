@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+    <div class="page-wrap">
+        {% include header.html %}
+
+        <div id='main' role='main'>
+
+            <div class='full' style='background: #333'>
+            <div class='row'>
+                <div class='large-12 columns'>
+                <h2 style='color: #fff;'>Amaizing projects</h2>
+                </div>
+            </div>
+            <div class='two spacing'></div>
+            </div>
+            <div class='two spacing'></div>
+            <div class='full'>
+            <div class='row'>
+                <div class='large-12 columns'>
+                <div class='mod modBoxedSlider'>
+                    <div class='slides'>
+                    {% for image in page.images %}
+                        <div class='slide'>
+                        <img alt="" src="{{image}}" />
+                        </div>
+                    {% endfor %}
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class='spacing'></div>
+            <div class='row'>
+                <div class='large-8 columns'>
+                <h3>{{page.title}}</h3>
+                <p>{{page.description}}</p>
+                <div class='spacing'></div>
+                <a class='button small' href='{{page.website}}'>Visit website</a>
+                </div>
+                <div class='large-4 columns'>
+                <ul class='info'>
+                    <li>
+                    <strong>Author:</strong>
+                    {{page.author}}
+                    </li>
+                    <li>
+                    <strong>License:</strong>
+                    {{page.license}}
+                    </li>
+                    <li>
+                    <div class='spacing'></div>
+                    <a href='{{site.url}}/projects/{{page.prev}}.html' title='previous'>
+                        <i class='icon-left-open'></i>
+                    </a>
+                    <a href='{{site.url}}/' title='back to work list'>
+                        <i class='icon-layout'></i>
+                    </a>
+                    <a href='{{site.url}}/projects/{{page.next}}.html' title='next'>
+                        <i class='icon-right-open'></i>
+                    </a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+            <div class='four spacing'></div>
+            </div>
+
+        </div>
+    </div>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>

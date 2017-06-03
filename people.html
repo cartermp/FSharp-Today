@@ -1,0 +1,135 @@
+---
+layout: default
+section_id: people
+members:
+  - name: Dave Thomas
+    desc:
+      Ex-Xamarin developer, author of F# support in Xamarin Studio, creator of F# Compiler Services, creator of F# support for iOS, official F# Community Badass
+    avatar: images/hackers/dave.jpg
+    socials:
+      - icon_class: fa fa-twitter
+        url: https://twitter.com/7sharp9_exhumed
+      - icon_class: fa fa-github
+        url: http://github.com/7sharp9
+      - icon_class: fa fa-rss
+        url: http://7sharpnine.com/
+
+  - name: Alfonso Garcia Caro
+    desc:
+      Author of Fable - modern F# -> JS compiler
+    avatar: images/hackers/alfonso.jpg
+    socials:
+      - icon_class: fa fa-twitter
+        url: https://twitter.com/alfonsogarciacaro
+      - icon_class: fa fa-github
+        url: http://github.com/alfonsogarciacaro
+      - icon_class: fa fa-rss
+        url: http://fable.io/
+
+  - name: Steffen Forkmann
+    desc:
+      Creator of Paket, and FAKE.
+    avatar: images/hackers/steffen.jpg
+    socials:
+      - icon_class: fa fa-twitter
+        url: https://twitter.com/sforkmann
+      - icon_class: fa fa-github
+        url: http://github.com/forki
+      - icon_class: fa fa-rss
+        url: http://www.navision-blog.de
+
+  - name: Eirik Tsarpalis
+    desc:
+      Creator of MBrace, Argu, FsPickler.
+    avatar: images/hackers/eirik.jpg
+    socials:
+      - icon_class: fa fa-twitter
+        url: https://twitter.com/eiriktsarpalis
+      - icon_class: fa fa-github
+        url: http://github.com/eiriktsarpalis
+      - icon_class: fa fa-rss
+        url: http://eiriktsarpalis.wordpress.com/
+
+  - name: Henrik Feldt
+    desc:
+       Author of Suave, Logary, Http.fs and many others F# OSS projects.
+    avatar: images/hackers/henrik.jpg
+    socials:
+      - icon_class: fa fa-twitter
+        url: https://twitter.com/henrikfeldt
+      - icon_class: fa fa-github
+        url: http://github.com/haf
+      - icon_class: fa fa-rss
+        url: https://haf.github.io/
+
+  - name: Tomas Petricek
+    desc:
+       Author of FSharp.Formatting, FSharp.Data, FsLab, TheGamma and many more.
+    avatar: images/hackers/tomas.jpg
+    socials:
+      - icon_class: fa fa-twitter
+        url: https://twitter.com/tomaspetricek
+      - icon_class: fa fa-github
+        url: http://github.com/tpetricek
+      - icon_class: fa fa-rss
+        url: http://tomasp.net/
+
+  - name: Krzysztof Cieslak
+    desc:
+      Creator of Ionide, Forge and FsToml
+    avatar: images/hackers/krzysztof.jpg
+    socials:
+      - icon_class: fa fa-twitter
+        url: https://twitter.com/k_cieslak
+      - icon_class: fa fa-github
+        url: http://github.com/Krzysztof-Cieslak
+      - icon_class: fa fa-rss
+        url: http://kcieslak.io/
+
+  - name: Chris Holt
+    desc:
+      Author of Canopy and Genit
+    avatar: images/hackers/chris.jpg
+    socials:
+      - icon_class: fa fa-twitter
+        url: https://twitter.com/lefthandedgoat
+      - icon_class: fa fa-github
+        url: http://github.com/lefthandedgoat
+---
+
+<div class='full' style='background: #333'>
+  <div class='row'>
+    <div class='large-12 columns'>
+      <h2 style='color: #fff;'>F# Hackers</h2>
+    </div>
+  </div>
+  <div class='two spacing'></div>
+</div>
+<div class='full' style='background: #f5f5f5'>
+  <div class='row'>
+    {% for member in page.members %}
+      <div class='small-6 medium-3 large-3 columns'>
+        <div class='mod modTeamMember style-2'>
+          <div class='member'>
+            <img class="avatar" alt="" src="{{site.url}}/{{member.avatar}}" />
+            <div class='overlay'>
+              <ul class='socials'>
+                {% for social in member.socials %}
+                  <li>
+                    <a href='{{social.url}}'>
+                      <i class='{{social.icon_class}}'></i>
+                    </a>
+                  </li>
+                {% endfor %}
+              </ul>
+            </div>
+          </div>
+          <h3>{{member.name}}</h3>
+          <p style="height: 100px;">{{member.desc}}</p>
+          <div class='two spacing'></div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+  <div class='two spacing'></div>
+</div>

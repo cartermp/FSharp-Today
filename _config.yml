@@ -1,0 +1,16 @@
+# Site settings
+title: F#.Today
+email: krzysztof_cieslak@windowslive.com
+description: > # this means to ignore newlines until "baseurl:"
+  F#.Today - how Community changes programming ecosystem. Created by Krzysztof Cieslak.
+baseurl: "" # the subpath of your site, e.g. /blog/
+# url: "http://yourdomain.com" # the base hostname & protocol for your site
+twitter_username: k_cieslak
+github_username:  Krzysztof-Cieslak
+
+# Build settings
+markdown: kramdown
+
+
+paginate: 4
+paginate_path: "blog/page:num"
